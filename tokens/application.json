@@ -189,6 +189,18 @@
             "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 88%, 1)",
             "type": "color"
           }
+        },
+        "shadow": {
+          "default": {
+            "value": "hsla({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 0%, 0.1)",
+            "type": "color"
+          }
+        },
+        "dimmer": {
+          "default": {
+            "value": "hsla({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 0%, 1)",
+            "type": "color"
+          }
         }
       },
       "component": {
