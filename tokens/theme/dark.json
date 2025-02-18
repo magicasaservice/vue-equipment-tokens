@@ -7,7 +7,7 @@
             "bg": {
               "default": {
                 "type": "color",
-                "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 0%)"
+                "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 0.5%)"
               },
               "hover": {
                 "type": "color",
@@ -41,7 +41,7 @@
             "bg": {
               "default": {
                 "type": "color",
-                "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 8%)"
+                "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 6%)"
               },
               "hover": {
                 "type": "color",
@@ -75,7 +75,7 @@
             "bg": {
               "default": {
                 "type": "color",
-                "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 0%)"
+                "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 10%)"
               },
               "hover": {
                 "type": "color",
@@ -109,7 +109,7 @@
             "bg": {
               "default": {
                 "type": "color",
-                "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 8%)"
+                "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 6%)"
               },
               "hover": {
                 "type": "color",
@@ -143,7 +143,7 @@
         "border": {
           "default": {
             "type": "color",
-            "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 100%, 0.06)"
+            "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.translucent}, 60%, {app.config.color.accent.alpha.border.default})"
           },
           "hover": {
             "type": "color",
@@ -152,7 +152,7 @@
               "studio.tokens": {
                 "modify": {
                   "type": "alpha",
-                  "value": "{app.config.color.accent.alpha.border.hover} ",
+                  "value": "{app.config.color.accent.alpha.border.default} + 0.02",
                   "space": "hsl"
                 }
               }
@@ -165,7 +165,7 @@
               "studio.tokens": {
                 "modify": {
                   "type": "alpha",
-                  "value": "{app.config.color.accent.alpha.border.active}",
+                  "value": "{app.config.color.accent.alpha.border.default} + 0.02",
                   "space": "hsl"
                 }
               }
@@ -174,69 +174,19 @@
         },
         "fg": {
           "default": {
-            "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 90%, 1)",
+            "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 70%, 1)",
             "type": "color"
           },
           "muted": {
-            "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 96%, 0.52)",
+            "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 70%, 0.54)",
             "type": "color"
           },
           "subtle": {
-            "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 96%, 0.24)",
+            "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 70%, 0.24)",
             "type": "color"
           },
           "inverted": {
-            "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 4%, 1)",
-            "type": "color"
-          },
-          "link": {
-            "default": {
-              "value": "{app.color.component.info.fg.solid}",
-              "type": "color"
-            },
-            "hover": {
-              "value": "{app.color.component.info.fg.solid}",
-              "type": "color",
-              "$extensions": {
-                "studio.tokens": {
-                  "modify": {
-                    "type": "darken",
-                    "value": "{app.config.color.info.darken.hover}",
-                    "space": "hsl"
-                  }
-                }
-              }
-            },
-            "active": {
-              "value": "{app.color.component.info.fg.solid}",
-              "type": "color",
-              "$extensions": {
-                "studio.tokens": {
-                  "modify": {
-                    "type": "darken",
-                    "value": "{app.config.color.info.darken.active}",
-                    "space": "hsl"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "shadow": {
-          "default": {
-            "value": "hsla({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 0%, 0.1)",
-            "type": "color"
-          }
-        },
-        "dimmer": {
-          "default": {
-            "value": "hsla({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 0%, 1)",
-            "type": "color"
-          }
-        },
-        "playground": {
-          "default": {
-            "value": "hsla({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 0%, 0.55)",
+            "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 6%, 1)",
             "type": "color"
           }
         }
@@ -246,73 +196,25 @@
           "bg": {
             "solid": {
               "type": "color",
-              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 96%)"
+              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 70%)"
             },
             "translucent": {
               "type": "color",
-              "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.translucent}, 96%, {app.config.color.accent.alpha.bg.default})"
+              "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.translucent}, 70%, {app.config.color.accent.alpha.bg.default})"
             },
             "tone": {
               "type": "color",
-              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 44%)"
+              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 24%)"
             }
           },
           "border": {
             "solid": {
               "type": "color",
-              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 96%)"
+              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 70%)"
             },
             "translucent": {
               "type": "color",
-              "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.translucent}, 96%, {app.config.color.accent.alpha.border.default})"
-            }
-          },
-          "fg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 96%)"
-            },
-            "muted": {
-              "type": "color",
-              "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 96%, 0.48)"
-            },
-            "onSolid": {
-              "type": "color",
-              "value": "{app.color.surface.fg.inverted}"
-            },
-            "onTone": {
-              "type": "color",
-              "value": "{app.color.surface.fg.inverted}"
-            },
-            "onTranslucent": {
-              "type": "color",
-              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 96%)"
-            }
-          }
-        },
-        "primary": {
-          "bg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 96%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.translucent}, 96%, {app.config.color.accent.alpha.bg.default})"
-            },
-            "tone": {
-              "type": "color",
-              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 44%)"
-            }
-          },
-          "border": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 96%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.translucent}, 96%, {app.config.color.accent.alpha.border.default})"
+              "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.translucent}, 70%, {app.config.color.accent.alpha.border.default})"
             }
           },
           "fg": {
@@ -330,192 +232,47 @@
             },
             "onTone": {
               "type": "color",
-              "value": "{app.color.surface.fg.inverted}"
+              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.translucent}, 70%)"
             },
             "onTranslucent": {
               "type": "color",
-              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 96%)"
+              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 70%)"
             }
           }
         },
-        "secondary": {
+        "primary": {
           "bg": {
             "solid": {
               "type": "color",
-              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 96%)"
+              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 70%)"
             },
             "translucent": {
               "type": "color",
-              "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.translucent}, 96%, {app.config.color.accent.alpha.bg.default})"
+              "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.translucent}, 70%, {app.config.color.accent.alpha.bg.default})"
             },
             "tone": {
               "type": "color",
-              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 44%)"
+              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 16%)"
             }
           },
           "border": {
             "solid": {
               "type": "color",
-              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 54%)"
+              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 70%)"
             },
             "translucent": {
               "type": "color",
-              "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.translucent}, 96%, {app.config.color.accent.alpha.border.default})"
+              "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.translucent}, 70%, {app.config.color.accent.alpha.border.default})"
             }
           },
           "fg": {
             "solid": {
               "type": "color",
-              "value": "{app.color.surface.fg.default}",
-              "$extensions": {
-                "studio.tokens": {
-                  "modify": {
-                    "type": "alpha",
-                    "value": "0.52",
-                    "space": "hsl"
-                  }
-                }
-              }
+              "value": "{app.color.surface.fg.default}"
             },
             "muted": {
               "type": "color",
-              "value": "{app.color.surface.fg.muted}",
-              "$extensions": {
-                "studio.tokens": {
-                  "modify": {
-                    "type": "alpha",
-                    "value": "0.52",
-                    "space": "hsl"
-                  }
-                }
-              }
-            },
-            "onSolid": {
-              "type": "color",
-              "value": "{app.color.surface.fg.inverted}",
-              "$extensions": {
-                "studio.tokens": {
-                  "modify": {
-                    "type": "alpha",
-                    "value": "0.52",
-                    "space": "hsl"
-                  }
-                }
-              }
-            },
-            "onTone": {
-              "type": "color",
-              "value": "{app.color.surface.fg.inverted}",
-              "$extensions": {
-                "studio.tokens": {
-                  "modify": {
-                    "type": "alpha",
-                    "value": "0.52",
-                    "space": "hsl"
-                  }
-                }
-              }
-            },
-            "onTranslucent": {
-              "type": "color",
-              "value": "{app.color.surface.fg.default}",
-              "$extensions": {
-                "studio.tokens": {
-                  "modify": {
-                    "type": "alpha",
-                    "value": "0.52",
-                    "space": "hsl"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "neutral": {
-          "bg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 96%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.translucent}, 96%, {app.config.color.neutral.alpha.bg.default})"
-            },
-            "tone": {
-              "type": "color",
-              "value": "hsl({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 44%)"
-            }
-          },
-          "border": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 96%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.translucent}, 96%, {app.config.color.neutral.alpha.border.default})"
-            }
-          },
-          "fg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 96%)"
-            },
-            "muted": {
-              "type": "color",
-              "value": "hsla({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 96%, 0.52)"
-            },
-            "onSolid": {
-              "type": "color",
-              "value": "hsl({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 4%)"
-            },
-            "onTone": {
-              "type": "color",
-              "value": "hsl({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 4%)"
-            },
-            "onTranslucent": {
-              "type": "color",
-              "value": "hsl({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 96%)"
-            },
-            "label": {
-              "type": "color",
-              "value": "hsla({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 96%, 0.4)"
-            }
-          }
-        },
-        "info": {
-          "bg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.info.hue.default}, {app.config.color.info.saturation.default}, 60%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.info.hue.default}, {app.config.color.info.saturation.translucent}, 55%, {app.config.color.info.alpha.bg.default})"
-            },
-            "tone": {
-              "type": "color",
-              "value": "hsl({app.config.color.info.hue.default}, {app.config.color.info.saturation.default}, 80%)"
-            }
-          },
-          "border": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.info.hue.default}, {app.config.color.info.saturation.default}, 65%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.info.hue.default}, {app.config.color.info.saturation.translucent}, 55%, {app.config.color.info.alpha.border.default})"
-            }
-          },
-          "fg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.info.hue.default}, {app.config.color.info.saturation.default}, 70%)"
-            },
-            "muted": {
-              "type": "color",
-              "value": "hsla({app.config.color.info.hue.default}, {app.config.color.info.saturation.default}, 60%, {app.config.color.info.alpha.fg.default})"
+              "value": "{app.color.surface.fg.muted}"
             },
             "onSolid": {
               "type": "color",
@@ -523,244 +280,11 @@
             },
             "onTone": {
               "type": "color",
-              "value": "hsl({app.config.color.info.hue.default}, {app.config.color.info.saturation.translucent}, 10%)"
+              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 70%)"
             },
             "onTranslucent": {
               "type": "color",
-              "value": "hsl({app.config.color.info.hue.default}, {app.config.color.info.saturation.default}, 70%)"
-            }
-          }
-        },
-        "success": {
-          "bg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.success.hue.default}, {app.config.color.success.saturation.default}, 35%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.success.hue.default}, {app.config.color.success.saturation.translucent}, 35%, {app.config.color.success.alpha.bg.default})"
-            },
-            "tone": {
-              "type": "color",
-              "value": "hsl({app.config.color.success.hue.default}, {app.config.color.success.saturation.default}, 80%)"
-            }
-          },
-          "border": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.success.hue.default}, {app.config.color.success.saturation.default}, 40%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.success.hue.default}, {app.config.color.success.saturation.translucent}, 30%, {app.config.color.success.alpha.border.default})"
-            }
-          },
-          "fg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.success.hue.default}, {app.config.color.success.saturation.default}, 45%)"
-            },
-            "muted": {
-              "type": "color",
-              "value": "hsla({app.config.color.success.hue.default}, {app.config.color.success.saturation.translucent}, 40%, {app.config.color.success.alpha.fg.default})"
-            },
-            "onSolid": {
-              "type": "color",
-              "value": "{app.color.surface.fg.inverted}"
-            },
-            "onTone": {
-              "type": "color",
-              "value": "hsl({app.config.color.success.hue.default}, {app.config.color.success.saturation.translucent}, 10%)"
-            },
-            "onTranslucent": {
-              "type": "color",
-              "value": "hsl({app.config.color.success.hue.default}, {app.config.color.success.saturation.default}, 75%)"
-            }
-          }
-        },
-        "warning": {
-          "bg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.warning.hue.default}, {app.config.color.warning.saturation.default}, 60%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.warning.hue.default}, {app.config.color.warning.saturation.translucent}, 60%, {app.config.color.warning.alpha.bg.default})"
-            },
-            "tone": {
-              "type": "color",
-              "value": "hsl({app.config.color.warning.hue.default}, {app.config.color.warning.saturation.default}, 80%)"
-            }
-          },
-          "border": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.warning.hue.default}, {app.config.color.warning.saturation.default}, 65%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.warning.hue.default}, {app.config.color.warning.saturation.translucent}, 65%, {app.config.color.warning.alpha.border.default})"
-            }
-          },
-          "fg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.warning.hue.default}, {app.config.color.warning.saturation.default}, 70%)"
-            },
-            "muted": {
-              "type": "color",
-              "value": "hsla({app.config.color.warning.hue.default}, {app.config.color.warning.saturation.translucent}, 65%, {app.config.color.warning.alpha.fg.default})"
-            },
-            "onSolid": {
-              "type": "color",
-              "value": "{app.color.surface.fg.inverted}"
-            },
-            "onTone": {
-              "type": "color",
-              "value": "hsl({app.config.color.warning.hue.default}, {app.config.color.warning.saturation.translucent}, 10%)"
-            },
-            "onTranslucent": {
-              "type": "color",
-              "value": "hsl({app.config.color.warning.hue.default}, {app.config.color.warning.saturation.default}, 80%)"
-            }
-          }
-        },
-        "danger": {
-          "bg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.danger.hue.default}, {app.config.color.danger.saturation.default}, 55%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.danger.hue.default}, {app.config.color.danger.saturation.translucent}, 55%, {app.config.color.danger.alpha.bg.default})"
-            },
-            "tone": {
-              "type": "color",
-              "value": "hsl({app.config.color.danger.hue.default}, {app.config.color.danger.saturation.default}, 80%)"
-            }
-          },
-          "border": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.danger.hue.default}, {app.config.color.danger.saturation.default}, 60%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.danger.hue.default}, {app.config.color.danger.saturation.translucent}, 60%, {app.config.color.danger.alpha.border.default})"
-            }
-          },
-          "fg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.danger.hue.default}, {app.config.color.danger.saturation.default}, 60%)"
-            },
-            "muted": {
-              "type": "color",
-              "value": "hsla({app.config.color.danger.hue.default}, {app.config.color.danger.saturation.translucent}, 60%, {app.config.color.danger.alpha.fg.default})"
-            },
-            "onSolid": {
-              "type": "color",
-              "value": "{app.color.surface.fg.inverted}"
-            },
-            "onTone": {
-              "type": "color",
-              "value": "hsl({app.config.color.danger.hue.default}, {app.config.color.danger.saturation.translucent}, 10%)"
-            },
-            "onTranslucent": {
-              "type": "color",
-              "value": "hsl({app.config.color.danger.hue.default}, {app.config.color.danger.saturation.default}, 70%)"
-            }
-          }
-        },
-        "disabled": {
-          "bg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 10%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.translucent}, 50%, {app.config.color.neutral.alpha.bg.subtle})"
-            },
-            "tone": {
-              "type": "color",
-              "value": "hsl({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 10%)"
-            },
-            "checked": {
-              "type": "color",
-              "value": "hsla({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 100%, {app.config.color.neutral.alpha.bg.default})"
-            }
-          },
-          "border": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 16%)"
-            },
-            "translucent": {
-              "type": "color",
-              "value": "hsla({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.translucent}, 100%, {app.config.color.neutral.alpha.border.subtle})"
-            }
-          },
-          "fg": {
-            "solid": {
-              "type": "color",
-              "value": "hsl({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 20%)"
-            },
-            "onTone": {
-              "type": "color",
-              "value": "hsl({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 20%)"
-            },
-            "onSolid": {
-              "type": "color",
-              "value": "hsl({app.config.color.neutral.hue.default}, {app.config.color.neutral.saturation.default}, 4%)"
-            },
-            "onTranslucent": {
-              "type": "color",
-              "value": "{app.color.surface.fg.default}",
-              "$extensions": {
-                "studio.tokens": {
-                  "modify": {
-                    "type": "alpha",
-                    "value": "0.12",
-                    "space": "hsl"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "focus": {
-          "border": {
-            "default": {
-              "type": "color",
-              "value": "{app.color.component.info.border.solid}",
-              "$extensions": {
-                "studio.tokens": {
-                  "modify": {
-                    "type": "lighten",
-                    "value": "{app.config.color.info.darken.focus}",
-                    "space": "hsl"
-                  }
-                }
-              }
-            }
-          },
-          "focusRing": {
-            "default": {
-              "type": "color",
-              "value": "{app.color.component.info.bg.solid}",
-              "$extensions": {
-                "studio.tokens": {
-                  "modify": {
-                    "type": "alpha",
-                    "value": "{app.config.color.info.alpha.focusRing.default}",
-                    "space": "hsl"
-                  }
-                }
-              }
+              "value": "hsl({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 70%)"
             }
           }
         }
@@ -768,110 +292,20 @@
     },
     "config": {
       "color": {
-        "neutral": {
-          "hue": {
-            "default": {
-              "value": "220",
-              "type": "other"
-            }
-          },
-          "saturation": {
-            "default": {
-              "value": "0%",
-              "type": "other"
-            },
-            "translucent": {
-              "value": "0%",
-              "type": "other"
-            }
-          },
-          "darken": {
-            "default": {
-              "value": "0.1",
-              "type": "other"
-            },
-            "hover": {
-              "value": "0.1",
-              "type": "other"
-            },
-            "active": {
-              "value": "0.2",
-              "type": "other"
-            }
-          },
-          "alpha": {
-            "bg": {
-              "default": {
-                "value": "0.06",
-                "type": "other"
-              },
-              "hover": {
-                "value": "0.08",
-                "type": "other"
-              },
-              "active": {
-                "value": "0.1",
-                "type": "other"
-              },
-              "subtle": {
-                "value": "0.04",
-                "type": "other"
-              }
-            },
-            "border": {
-              "default": {
-                "value": "0.12",
-                "type": "other"
-              },
-              "hover": {
-                "value": "0.14",
-                "type": "other"
-              },
-              "active": {
-                "value": "0.16",
-                "type": "other"
-              },
-              "subtle": {
-                "value": "0.08",
-                "type": "other"
-              }
-            },
-            "fg": {
-              "default": {
-                "value": "0.6",
-                "type": "other"
-              },
-              "hover": {
-                "value": "1",
-                "type": "other"
-              },
-              "active": {
-                "value": "1",
-                "type": "other"
-              }
-            }
-          },
-          "lighten": {
-            "default": {
-              "value": "0.8",
-              "type": "other"
-            }
-          }
-        },
         "accent": {
           "hue": {
             "default": {
-              "value": "220",
+              "value": "70",
               "type": "other"
             }
           },
           "saturation": {
             "default": {
-              "value": "3%",
+              "value": "4%",
               "type": "other"
             },
             "translucent": {
-              "value": "3%",
+              "value": "4%",
               "type": "other"
             }
           },
@@ -892,15 +326,15 @@
           "alpha": {
             "bg": {
               "default": {
-                "value": "0.06",
+                "value": "0.12",
                 "type": "other"
               },
               "hover": {
-                "value": "0.08",
+                "value": "0.16",
                 "type": "other"
               },
               "active": {
-                "value": "0.1",
+                "value": "0.2",
                 "type": "other"
               },
               "subtle": {
@@ -910,15 +344,15 @@
             },
             "border": {
               "default": {
-                "value": "0.12",
+                "value": "0.16",
                 "type": "other"
               },
               "hover": {
-                "value": "0.14",
+                "value": "0.2",
                 "type": "other"
               },
               "active": {
-                "value": "0.16",
+                "value": "0.24",
                 "type": "other"
               },
               "subtle": {
@@ -963,23 +397,23 @@
         "primary": {
           "hue": {
             "default": {
-              "value": "220",
+              "value": "70",
               "type": "other"
             }
           },
           "saturation": {
             "default": {
-              "value": "3%",
+              "value": "4%",
               "type": "other"
             },
             "translucent": {
-              "value": "3%",
+              "value": "4%",
               "type": "other"
             }
           },
           "darken": {
             "default": {
-              "value": "0.1",
+              "value": "0.12",
               "type": "other"
             },
             "hover": {
@@ -994,15 +428,15 @@
           "alpha": {
             "bg": {
               "default": {
-                "value": "0.06",
+                "value": "0.12",
                 "type": "other"
               },
               "hover": {
-                "value": "0.08",
+                "value": "0.16",
                 "type": "other"
               },
               "active": {
-                "value": "0.1",
+                "value": "0.2",
                 "type": "other"
               },
               "subtle": {
@@ -1012,15 +446,15 @@
             },
             "border": {
               "default": {
-                "value": "0.12",
+                "value": "0.16",
                 "type": "other"
               },
               "hover": {
-                "value": "0.14",
+                "value": "0.2",
                 "type": "other"
               },
               "active": {
-                "value": "0.16",
+                "value": "0.24",
                 "type": "other"
               },
               "subtle": {
@@ -1053,348 +487,6 @@
               "type": "other"
             },
             "active": {
-              "value": "0.8",
-              "type": "other"
-            }
-          }
-        },
-        "info": {
-          "hue": {
-            "default": {
-              "value": "220",
-              "type": "other"
-            }
-          },
-          "saturation": {
-            "default": {
-              "value": "100%",
-              "type": "other"
-            },
-            "translucent": {
-              "value": "100%",
-              "type": "other"
-            }
-          },
-          "darken": {
-            "default": {
-              "value": "0.08",
-              "type": "other"
-            },
-            "hover": {
-              "value": "0.08",
-              "type": "other"
-            },
-            "active": {
-              "value": "0.16",
-              "type": "other"
-            },
-            "focus": {
-              "value": "0.24",
-              "type": "other"
-            }
-          },
-          "alpha": {
-            "bg": {
-              "default": {
-                "value": "0.2",
-                "type": "other"
-              },
-              "hover": {
-                "value": "0.24",
-                "type": "other"
-              },
-              "active": {
-                "value": "0.32",
-                "type": "other"
-              }
-            },
-            "border": {
-              "default": {
-                "value": "0.24",
-                "type": "other"
-              },
-              "hover": {
-                "value": "0.32",
-                "type": "other"
-              },
-              "active": {
-                "value": "0.4",
-                "type": "other"
-              }
-            },
-            "focusRing": {
-              "default": {
-                "value": "{app.config.color.info.alpha.bg.active} - 0.08",
-                "type": "other"
-              }
-            },
-            "fg": {
-              "default": {
-                "value": "0.6",
-                "type": "other"
-              },
-              "hover": {
-                "value": "1",
-                "type": "other"
-              },
-              "active": {
-                "value": "1",
-                "type": "other"
-              }
-            }
-          },
-          "lighten": {
-            "default": {
-              "value": "0.8",
-              "type": "other"
-            }
-          }
-        },
-        "success": {
-          "hue": {
-            "default": {
-              "value": "155",
-              "type": "other"
-            }
-          },
-          "saturation": {
-            "default": {
-              "value": "100%",
-              "type": "other"
-            },
-            "translucent": {
-              "value": "80%",
-              "type": "other"
-            }
-          },
-          "darken": {
-            "default": {
-              "value": "0.1",
-              "type": "other"
-            },
-            "hover": {
-              "value": "0.1",
-              "type": "other"
-            },
-            "active": {
-              "value": "0.2",
-              "type": "other"
-            }
-          },
-          "alpha": {
-            "bg": {
-              "default": {
-                "value": "0.16",
-                "type": "other"
-              },
-              "hover": {
-                "value": "0.24",
-                "type": "other"
-              },
-              "active": {
-                "value": "0.32",
-                "type": "other"
-              }
-            },
-            "border": {
-              "default": {
-                "value": "0.32",
-                "type": "other"
-              },
-              "hover": {
-                "value": "0.4",
-                "type": "other"
-              },
-              "active": {
-                "value": "0.48",
-                "type": "other"
-              }
-            },
-            "fg": {
-              "default": {
-                "value": "0.6",
-                "type": "other"
-              },
-              "hover": {
-                "value": "1",
-                "type": "other"
-              },
-              "active": {
-                "value": "1",
-                "type": "other"
-              }
-            }
-          },
-          "lighten": {
-            "default": {
-              "value": "0.8",
-              "type": "other"
-            }
-          }
-        },
-        "warning": {
-          "hue": {
-            "default": {
-              "value": "40",
-              "type": "other"
-            }
-          },
-          "saturation": {
-            "default": {
-              "value": "100%",
-              "type": "other"
-            },
-            "translucent": {
-              "value": "90%",
-              "type": "other"
-            }
-          },
-          "darken": {
-            "default": {
-              "value": "0.1",
-              "type": "other"
-            },
-            "hover": {
-              "value": "0.1",
-              "type": "other"
-            },
-            "active": {
-              "value": "0.2",
-              "type": "other"
-            }
-          },
-          "alpha": {
-            "bg": {
-              "default": {
-                "value": "0.32",
-                "type": "other"
-              },
-              "hover": {
-                "value": "0.4",
-                "type": "other"
-              },
-              "active": {
-                "value": "0.48",
-                "type": "other"
-              }
-            },
-            "border": {
-              "default": {
-                "value": "0.48",
-                "type": "other"
-              },
-              "hover": {
-                "value": "0.56",
-                "type": "other"
-              },
-              "active": {
-                "value": "0.64",
-                "type": "other"
-              }
-            },
-            "fg": {
-              "default": {
-                "value": "0.6",
-                "type": "other"
-              },
-              "hover": {
-                "value": "1",
-                "type": "other"
-              },
-              "active": {
-                "value": "1",
-                "type": "other"
-              }
-            }
-          },
-          "lighten": {
-            "default": {
-              "value": "0.8",
-              "type": "other"
-            }
-          }
-        },
-        "danger": {
-          "hue": {
-            "default": {
-              "value": "15",
-              "type": "other"
-            }
-          },
-          "saturation": {
-            "default": {
-              "value": "100%",
-              "type": "other"
-            },
-            "translucent": {
-              "value": "100%",
-              "type": "other"
-            }
-          },
-          "darken": {
-            "default": {
-              "value": "0.08",
-              "type": "other"
-            },
-            "hover": {
-              "value": "0.08",
-              "type": "other"
-            },
-            "active": {
-              "value": "0.12",
-              "type": "other"
-            }
-          },
-          "alpha": {
-            "bg": {
-              "default": {
-                "value": "0.16",
-                "type": "other"
-              },
-              "hover": {
-                "value": "0.24",
-                "type": "other"
-              },
-              "active": {
-                "value": "0.32",
-                "type": "other"
-              },
-              "subtle": {
-                "value": "0.08",
-                "type": "other"
-              }
-            },
-            "border": {
-              "default": {
-                "value": "0.32",
-                "type": "other"
-              },
-              "hover": {
-                "value": "0.4",
-                "type": "other"
-              },
-              "active": {
-                "value": "0.48",
-                "type": "other"
-              }
-            },
-            "fg": {
-              "default": {
-                "value": "0.6",
-                "type": "other"
-              },
-              "hover": {
-                "value": "1",
-                "type": "other"
-              },
-              "active": {
-                "value": "1",
-                "type": "other"
-              }
-            }
-          },
-          "lighten": {
-            "default": {
               "value": "0.8",
               "type": "other"
             }
