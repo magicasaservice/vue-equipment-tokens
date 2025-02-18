@@ -1,10 +1,6 @@
-# Platform Tokens
+# Vue Equipment Tokens
 
 > An opinionated design token structure, powering [Mirror](https://github.com/magicasaservice/mirror)
-
-## 💡 Intention
-
-This repository is intended to power our own design system as well as serve as a blueprint for all future design system projects.
 
 ## 🚧 Construction
 
@@ -27,7 +23,7 @@ The specificity of each layer topples the one prior. Tokens from each layer can 
 
 ## ✨ Customization
 
-Each token serves a purpose and can be updated if needed. Tokens further down the hierarchy have a wider spread influence on the final visual outcome compared to tokens further up the hierarchy. 
+Each token serves a purpose and can be updated if needed. Tokens further down the hierarchy have a wider spread influence on the final visual outcome compared to tokens further up the hierarchy.
 
 ## 🎟️ Theming
 
@@ -57,7 +53,6 @@ Each layer of tokens fulfills a different function. Therefore, adding, removing 
 ### component
 
 > coming soon
-
 
 ## 🧰 Tooling
 
