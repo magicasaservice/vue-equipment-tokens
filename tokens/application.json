@@ -286,6 +286,10 @@
               "type": "color",
               "value": "{app.color.surface.fg.muted}"
             },
+            "subtle": {
+              "type": "color",
+              "value": "hsla({app.config.color.accent.hue.default}, {app.config.color.accent.saturation.default}, 4%, 0.24)"
+            },
             "onSolid": {
               "type": "color",
               "value": "{app.color.surface.fg.inverted}"
