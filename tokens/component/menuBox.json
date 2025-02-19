@@ -51,7 +51,7 @@
       },
       "color": {
         "bg": {
-          "value": "{app.color.surface.elevation.base.bg.default}",
+          "value": "{app.color.surface.elevation.high.bg.default}",
           "type": "color",
           "$extensions": {
             "studio.tokens": {
